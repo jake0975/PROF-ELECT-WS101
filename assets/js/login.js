@@ -4,10 +4,10 @@ function login() {
  var password = document.getElementById("password").value;
  if(username == 'admin' && password == 'admin'){
     alert('Welcome! :)');
-    window.location.href = "home.html";
+    window.location.href = "index.html";
  }else{
     alert('Invalid Account');
-    window.location.href = "index.html";
+    window.location.href = "login.html";
  }
  
 }

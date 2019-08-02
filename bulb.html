@@ -10,10 +10,10 @@
     <title>GCC FMS</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,15 +46,18 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="color: white;">
                 <ul class="nav navbar-nav">
                     <li >
-                        <a href="home.html" style="color: white;" >Home</a>
+                        <a href="index.html" style="color: white;" >Home</a>
+                    </li >
+                    <li  >
+                        <a href="blog.html" style="color: white;">Blog</a>
                     </li >
                     <li  class="active">
-                        <a href="blog.html" style="color: white;">Blog</a>
+                        <a href="bulb.html" style="color: white;">Bulb</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="index.html" style="color: white;">Logout</a>
+                        <a href="login.html" style="color: white;">Login</a>
                     </li>
                 </ul>
             </div>
@@ -69,8 +72,8 @@
         <!-- Heading -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">DEVELOPER
-                    <small>Dixter Jake Magramo</small>
+                <h1 class="page-header">BULB
+                    <small>Javascript Sample</small>
                 </h1>
             </div>
         </div>
@@ -78,38 +81,12 @@
 
         <!-- Projects Row -->
         <div class="row">
-            <div class="col-md-6 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="img/jake.jpg" alt="" style="height: 500px;">
-                </a>
-            </div>
-            <div class="col-md-6 portfolio-item">
-                <h3>
-                    <a href="#">Personal Information</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <h3>
-                    <a href="#">Education Background</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <img id="myImage" src="assets/img/off.gif" width="100" height="180">
 
-            </div>
+                <p>
+                <button type="button" onclick="light(1)">Light On</button>
+                <button type="button" onclick="light(0)">Light Off</button>
+                </p>
         </div>
         <!-- /.row -->
 
@@ -127,7 +104,7 @@
                 <h3>MEMBERS</h3>
 				<div class="row">
 					<div class="col-sm-4 footer-blurb-item">
-						<img class="img-circle" src="img/aldrin.jpg" alt="" width="100" height="100">
+						<img class="img-circle" src="assets/img/aldrin.jpg" alt="" width="100" height="100">
                         <h3>Aldrin Jhon Matayabas</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -138,7 +115,7 @@
                         <p><a class="btn btn-primary" href="#">More Stuff</a></p>
 					</div>
 					<div class="col-sm-4 footer-blurb-item">
-						<img class="img-circle" src="img/gerald.jpg" alt="" width="100" height="100">
+						<img class="img-circle" src="assets/img/gerald.jpg" alt="" width="100" height="100">
                         <h3>Gerald Villadores</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -149,7 +126,7 @@
 						<p><a class="btn btn-primary" href="#">More Stuff</a></p>
 					</div>
 					<div class="col-sm-4 footer-blurb-item">
-						<img class="img-circle" src="img/conchas.jpg" alt="" width="100" height="100">
+						<img class="img-circle" src="assets/img/conchas.jpg" alt="" width="100" height="100">
                         <h3>April Mae Conchas</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -169,11 +146,11 @@
 
 	
     <!-- jQuery -->
-    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
