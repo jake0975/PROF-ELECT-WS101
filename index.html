@@ -18,14 +18,39 @@
       <a href="#name"><span class="white-text name">Dixter Jake Magramo</span></a>
       <a href="#email"><span class="white-text email">Magramo@yahoo.com</span></a>
     </div></li>
-    <li><a href="#!"><i class="material-icons">home</i>HOME</a></li>
-    <li><a href="#!"><i class="material-icons">account_circle</i>ABOUT</a></li>
+    <li><a href="index.html"><i class="material-icons">home</i>HOME</a></li>
+    <li><a href="#!"><i class="material-icons">face</i>BLOG</a></li>
+    <li> <a class="waves-effect waves-light modal-trigger" href="#modal1"><i class="material-icons">account_circle</i>LOGIN</a></li>
     <li><div class="divider"></div></li>
     <li><a class="subheader">Subheader</a></li>
     <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
   </ul>
   <div class="blue darken-3">
   	<a class="waves-effect waves-light btn sidenav-trigger" data-target="slide-out" style="margin: 10px;"><i class="material-icons">menu</i></a>
+  </div>
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Login</h4>
+    </div>
+    
+      <div class="row" style="padding: 30px;">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">Username</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">phone</i>
+              <input id="icon_telephone" type="password" class="validate">
+              <label for="icon_telephone">Password</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+    </div>
   </div>
    <img class="materialboxed" width="100%" src="assets/img/1.jpg" >
    <script src="assets/js/materialize.min.js"></script>
@@ -39,6 +64,10 @@
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, open());
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, open());
   });
 </script>
 </html>
